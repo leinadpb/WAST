@@ -1,0 +1,11 @@
+C:\Users\danie\Desktop\apps\WAST-template\WAST\bin\Release\netcoreapp2.0\WAST.deps.json
+C:\Users\danie\Desktop\apps\WAST-template\WAST\bin\Release\netcoreapp2.0\WAST.runtimeconfig.json
+C:\Users\danie\Desktop\apps\WAST-template\WAST\bin\Release\netcoreapp2.0\WAST.runtimeconfig.dev.json
+C:\Users\danie\Desktop\apps\WAST-template\WAST\bin\Release\netcoreapp2.0\WAST.dll
+C:\Users\danie\Desktop\apps\WAST-template\WAST\bin\Release\netcoreapp2.0\WAST.pdb
+C:\Users\danie\Desktop\apps\WAST-template\WAST\obj\Release\netcoreapp2.0\WAST.csproj.CoreCompileInputs.cache
+C:\Users\danie\Desktop\apps\WAST-template\WAST\obj\Release\netcoreapp2.0\WAST.AssemblyInfoInputs.cache
+C:\Users\danie\Desktop\apps\WAST-template\WAST\obj\Release\netcoreapp2.0\WAST.AssemblyInfo.cs
+C:\Users\danie\Desktop\apps\WAST-template\WAST\obj\Release\netcoreapp2.0\WAST.dll
+C:\Users\danie\Desktop\apps\WAST-template\WAST\obj\Release\netcoreapp2.0\WAST.pdb
+C:\Users\danie\Desktop\apps\WAST-template\WAST\obj\Release\netcoreapp2.0\WAST.csprojResolveAssemblyReference.cache

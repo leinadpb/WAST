@@ -1,0 +1,107 @@
+﻿@{
+    ViewData["Title"] = "WAST";
+}
+<div class="box">
+    <h1 class="title">@ViewBag.Hello</h1>
+    <p class="subtitle">@ViewBag.Info</p>
+    <div class="social-box">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="user-info">
+                        <span><i class="fas fa-user"></i> Daniel Peña</span> <span class="divider">/</span>
+                        <span><i class="fab fa-github-square"></i> <a href="https://github.com/leinadpb">github.com/leinadpb</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="container">
+        <div class="big-v-space"></div>
+        <div class="section">
+            <div class="title animated" id="section-1-title">
+                <h1>Start building your app now!</h1>
+            </div>
+            <div class="desc animated" id="section-1-desc">
+                <p>This is a fast and modern way to start building apps rapidly from scratch.</p>
+            </div>
+        </div>
+        <div class="download-section">
+            <i class="fas fa-angle-down icon"></i>
+            <div class="big-v-space"></div>
+            <a href="https://github.com/leinadpb/WAST" class="btn btn-lg download-button" role="button" aria-pressed="true">Download starter project</a>
+        </div>
+        <div class="view-comments-section-over" id="view-comments-section-over"> <!-- Temporal information -->
+            <div class="big-v-space"></div>
+            <div class="title animated" id="section-1-title">
+                <h1>Press the button on the bottom right to send a comment...</h1>
+            </div>
+            <div class="desc animated" id="section-1-desc">
+                <p>This comment will be sent to all connected users in this app!</p>
+            </div>
+            <div class="big-v-space"></div>
+        </div>
+        <div class="view-comments-section" id="view-comments-section-id">
+            <ul class="list-group" id="comment-list"></ul>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-bottom"><small>&copy; Copyright 2018 - WAST</small></div>
+    </div>
+</div>
+<!-- Modal ask for comment information -->
+<div class="modal fade" tabindex="-1" role="dialog" id="commentBox">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Share a comment in a real time conversation!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Nombre o identificador..." id="user-text" />
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Texto o mensaje..." id="comment-text" />
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="send-comment-button" data-dismiss="modal">Share comment</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<a onclick="openModal()" data-toggle="modal" data-target="#commentBox"><div class="chat-button" id="chat-button"><span><i class="fas fa-share-alt"></i></span></div></a>
+
+@section Scripts{
+    <script src="~/lib/signalr.js"></script>
+    <script>
+        //Hide real time comments section
+        $('#view-comments-section-id').hide();
+        //Animate title
+        $('#section-1-title').addClass('fadeInLeft');
+        $('#section-1-desc').addClass('fadeIn');
+        var chatBtn = document.getElementById('chat-button');
+        chatBtn.style.width = "50px";
+        chatBtn.style.height = "50px";
+        chatBtn.style.borderRadius = "25px";
+        chatBtn.style.top = (window.innerHeight - 80).toString() + 'px';
+        chatBtn.style.left = (window.innerWidth - 80).toString() + 'px';
+        function openModal() {
+            $('#commentBox').on('shown.bs.modal', function () {
+                $('#myInput').trigger('focus')
+            });
+        }
+        window.onresize = function () {
+            chatBtn.style.left = (window.innerWidth - 80).toString() + 'px';
+        };
+    </script>
+    
+    <!-- Initiate Real Time Comment Behaviour -->
+    <script src="~/js/comments.js"></script>
+}

@@ -1,0 +1,10 @@
+C:\Users\danie\Desktop\apps\WAST-template\WAST
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=WAST
+--content-root=C:\Users\danie\Desktop\apps\WAST-template\WAST
+--file=C:\Users\danie\Desktop\apps\WAST-template\WAST\Views\Home\Index.cshtml
+--file=C:\Users\danie\Desktop\apps\WAST-template\WAST\Views\Shared\Error.cshtml
+--file=C:\Users\danie\Desktop\apps\WAST-template\WAST\Views\Shared\_Layout.cshtml
+--file=C:\Users\danie\Desktop\apps\WAST-template\WAST\Views\Shared\_ValidationScriptsPartial.cshtml
+--file=C:\Users\danie\Desktop\apps\WAST-template\WAST\Views\_ViewImports.cshtml
+--file=C:\Users\danie\Desktop\apps\WAST-template\WAST\Views\_ViewStart.cshtml

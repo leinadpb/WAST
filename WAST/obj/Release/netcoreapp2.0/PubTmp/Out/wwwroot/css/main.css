@@ -1,0 +1,144 @@
+@charset "UTF-8";
+/**
+    Hello World!
+    - The Web App Starter Template
+    By: Daniel Peña  /  github.com/leinadpb/wast
+    Main Styles - 9/03/2018
+*/
+/* General */
+body {
+  background-color: #054F35; }
+
+.big-v-space {
+  width: 100%;
+  height: 70px; }
+
+.mid-v-space {
+  width: 100%;
+  height: 35px; }
+
+.tin-v-space {
+  width: 100%;
+  height: 23.33333px; }
+
+/* Box */
+.box {
+  padding: 0.5em;
+  text-align: center;
+  background-color: #F7F7F7; }
+
+.box .title {
+  font-size: 2.5em;
+  color: #097A53; }
+
+.box .subtitle {
+  font-size: 0.95em;
+  color: #054F35; }
+
+.user-info {
+  padding: 0.4em;
+  background-color: #F7F7F7; }
+
+.user-info .divider {
+  margin-left: 6px;
+  margin-right: 6px; }
+
+/* Content */
+.content .section {
+  text-align: center;
+  margin: 0.4em;
+  padding: 0.6em; }
+
+.content .title {
+  font-size: 3.0em;
+  color: #F7F7F7; }
+
+.content .desc {
+  color: #097A53;
+  font-size: 1.25em;
+  font-style: italic; }
+
+/* Download section */
+.download-section {
+  text-align: center;
+  padding: 0.7em;
+  color: white; }
+
+.download-section .icon {
+  position: relative;
+  font-size: 6em;
+  animation: anim-download-button 2s ease-in-out infinite; }
+
+.download-section .download-button {
+  margin-top: 20px;
+  border: 2px solid #097A53;
+  border-radius: 5px;
+  background-color: #F7F7F7;
+  color: #054F35;
+  transition: 0.2s ease; }
+
+.download-section .download-button:hover {
+  border: 2px solid #097A53;
+  border-radius: 5px;
+  background-color: #054F35;
+  color: #F7F7F7; }
+
+/* Chat */
+.chat-button {
+  position: fixed;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+  background-color: #009ac4;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 2.0em;
+  color: #F7F7F7; }
+
+.chat-button:hover {
+  cursor: pointer; }
+
+.view-comments-section {
+  margin-top: 0.7em; }
+
+.list-group-item .comment-date {
+  color: #097A53;
+  font-style: italic; }
+
+.list-group-item .comment-user {
+  color: #054F35;
+  font-weight: 600; }
+
+.list-group-item .comment-msg {
+  color: #000; }
+
+.view-comments-section {
+  height: 160px;
+  overflow-y: scroll; }
+
+.footer .footer-bottom {
+  margin-top: 1.3em;
+  width: 100%;
+  height: auto;
+  padding: 0.4em;
+  text-align: center;
+  color: #F7F7F7;
+  background-color: #000000;
+  font-size: 1.0rem; }
+
+/* Bootstrap Styles Overwrites */
+.list-group-item {
+  background-color: none; }
+
+/* Keyframes */
+@keyframes anim-download-button {
+  0% {
+    top: 0px; }
+  25% {
+    top: 40px; }
+  50% {
+    top: 20px; }
+  75% {
+    top: 40px; }
+  100% {
+    top: 0px; } }
